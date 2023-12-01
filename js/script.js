@@ -1,5 +1,8 @@
 //  Utilizzando i dati forniti, creare un array di oggetti per rappresentare i membri del team. Ogni membro è caratterizzato dalle seguenti informazioni: nome, ruolo e foto.
 
+// dichiarazione variabili
+const gridElement = document.getElementById("grid");
+
 // Creazione Array di oggetti dei membri del team
 const arrayMembri = [
     {
@@ -40,4 +43,34 @@ const arrayMembri = [
     }
 ]
 
+// creazione ciclo della griglia
+for ( i = 0; i <= 6; i++) {
+
+    const myElement = createMyElement("div", "member");
+    gridElement.append(myElement);
+}
+
 // Ciclare su tutti i membri e stampare per ognuno di essi: nome, cognome, ruolo e immagine.
+for (let i = 0; i < arrayMembri.length; i++) {
+
+    let membroIesimo = arrayMembri[i];
+    // console.log(membroIesimo);
+
+    let nomeMembroIesimo = membroIesimo.nome;
+    let cognomeMembroIesimo = membroIesimo.cognome;
+    let roleMembroIesimo = membroIesimo.role;
+    let imgMembroIesimo = membroIesimo.img;
+
+    console.log(nomeMembroIesimo, cognomeMembroIesimo, ":", roleMembroIesimo, imgMembroIesimo);
+}
+
+
+
+// FUNZIONE
+
+function createMyElement(tagtype, classname) {
+    const currentElement = document.createElement(tagtype);
+    currentElement.classList.add(classname);
+
+    return currentElement;
+}

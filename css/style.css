@@ -11,8 +11,34 @@
     color-scheme: dark;
 }
 
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
 /* Stili Main */
 h1 {
     text-align: center;
-    margin-top: 150px;
+    margin-top: 50px;
 }
+
+p {
+    text-align: center;
+    line-height: 2rem;
+    margin-top: 30px;
+}
+
+.container-card {
+    margin-top: 30px;
+}
+
+#grid {
+    width: 100%;
+}
+
+#grid .member {
+    width: 100%;
+    height: 80px;
+    border: 2px solid white;
+}
+
