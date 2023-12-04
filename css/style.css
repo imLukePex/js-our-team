@@ -34,11 +34,15 @@ p {
 
 #grid {
     width: 100%;
+    border: 1px solid white;
 }
 
 #grid .member {
     width: 100%;
     height: 80px;
-    border: 2px solid white;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    padding: 20px;
 }
 
